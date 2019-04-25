@@ -1,0 +1,123 @@
+<!--
+Copyright (c) 2019 Cristian José Jiménez Diazgranados
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+<!doctype html>
+<!-- Start -->
+<html>
+
+<!-- Head -->
+<head>
+<meta charset="utf-8">
+<title>Sin titulo</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="lib/css/black-3d-1.css">
+<link rel="stylesheet" href="lib/css/skin.css">
+<link rel="stylesheet" href="lib/css/loading.css">
+<link rel="stylesheet" href="custom.css">
+</head>
+<!-- End of Head -->
+
+<!-- Body -->
+<body onload="load()" onresize="mutate()">
+<noscript>
+<div class="container"><div class="row">
+<div class="col-md-12">
+<div class="alert alert-danger">
+<span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;<strong>Error</strong>
+Parece que Javascript no esta habilitado en tu navegador. Habilitalo y recarga la p&aacute;gina.
+</div>
+</div>
+</div>
+</div>
+</noscript>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-content" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" data-toggle="modal" data-target="#about-modal">Manga Reader</a>
+    </div>
+<div class="collapse navbar-collapse" id="collapsable-content">
+<ul class="nav navbar-nav" id="first-navbar-section">
+<li data-toggle="tooltip" data-placement="bottom" title="Primera p&aacute;gina"><a href="javascript:void(0)" onclick="firstPage()" id="rw"><span class="glyphicon glyphicon-fast-backward"></span></a></li>
+<li data-toggle="tooltip" data-placement="bottom" title="P&aacute;gina anterior"><a href="javascript:void(0)" onclick="backward()" id="b"><span class="glyphicon glyphicon-backward"></span></a></li>
+<li data-toggle="tooltip" data-placement="bottom" title="P&aacute;gina siguiente"><a href="javascript:void(0)" onclick="forward()" id="f"><span class="glyphicon glyphicon-forward"></span></a></li>
+<li data-toggle="tooltip" data-placement="bottom" title="&Uacute;ltima p&aacute;gina"><a href="javascript:void(0)" onclick="lastPage()" id="ff"><span class="glyphicon glyphicon-fast-forward"></span></a></li>
+<li><table><tr><td><p class="navbar-text special-margin"><strong>Ir a:</strong></p></td>
+<td>
+<div class="black-select">
+<select id="page-selector" onchange="pageSelector()"></select>
+</div>
+</td></tr></table></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li id="manga-title"><p class="navbar-text">T&iacute;tulo</p></li>
+<li id="page-counter"><p class="navbar-text">P&aacute;gina X de Y</p></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-md-offset-1 col-md-10" id="main-screen">
+<div id="cover-spin"></div>
+</div>
+</div>
+<!-- Modal (About) -->
+<div class="modal fade" role="dialog" id="about-modal">
+<div class="modal-dialog modal-sm" role="document">
+<div class="modal-content">
+<div class="modal-header black-3d-1">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title">Acerca de</h4>
+</div>
+<div class="modal-body">
+<p class="text-left">Lector de Mangas creado por <strong>Cristian Jos&eacute; Jim&eacute;nez Diazgranados</strong> para <i id="host-name">&lt;tu_pagina_aqui&gt;</i></p>
+<p class="text-center" id="copyright">&copy;2016-2018</p>
+</div></div></div></div>
+<!-- End of modal -->
+</div>
+
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type='text/javascript' language="javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="url.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/constants.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/getters.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/switches.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/evolution.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/locale.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/context.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/limits.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/core.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/maker.js"></script>
+<script type="text/javascript" language="javascript" src="lib/js/loader.js"></script>
+<script>$(function(){ $('[data-toggle="tooltip"]').tooltip(); });</script>
+</body>
+<!-- End of Body -->
+
+</html>
+<!-- Finish -->

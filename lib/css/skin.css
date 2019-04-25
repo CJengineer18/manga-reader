@@ -1,0 +1,127 @@
+/*
+Copyright (c) 2019 Cristian José Jiménez Diazgranados
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+/* Manga Reader CSS */
+/* Skin: black background */
+
+body {
+    background: black;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+/* label.navbar-inverse-form-label{color: #9d9d9d} */
+
+div.tooltip div.tooltip-inner {
+    background: blue;
+    color: yellow;
+}
+
+div.tooltip.bottom div.tooltip-arrow {
+    border-bottom-color: blue;
+}
+
+img.manga-page {
+    width: 100%;
+}
+
+/* select#page-selector{color: black} */
+
+#collapsable-content > ul.nav.navbar-nav > li.mobile p.navbar-text {
+    margin: 0;
+    padding: 10px 15px;
+    line-height: 20px;
+}
+
+.black-select {
+    background: rgb(46, 46, 46);
+    width: 47px;
+    height: 32px;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.black-select select {
+    background: transparent;
+    width: 47px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.navbar-text.special-margin {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#dead-end {
+    margin-top: 24px;
+}
+
+#dead-end > .btn {
+    padding: 10px 14px;
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+#dead-end > .btn.btn-lg {
+    padding: 20px 24px;
+    font-size: 22px;
+}
+
+#about-modal .modal-content {
+    background: black;
+    border-color: rgb(38, 38, 38);
+}
+
+#about-modal .modal-content > .modal-header {
+    border-bottom-color: rgb(38, 38, 38);
+    padding: 10px;
+}
+
+#about-modal .modal-content > .modal-header > .close {
+    color: white;
+    text-shadow: 0 1px 0 black;
+}
+
+#about-modal .modal-content > .modal-body > #copyright {
+    margin: 0;
+}
+
+#about-modal .modal-content > .modal-header > .modal-title {
+    font-size: 16px;
+}
+
+#about-modal .host-link {
+    font-style: italic;
+    color: white;
+}
+
+#about-modal .host-link:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
