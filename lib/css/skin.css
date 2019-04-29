@@ -70,7 +70,12 @@ img.manga-page {
     line-height: 1;
     border: 0;
     border-radius: 0;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
+}
+
+.black-select select option {
+    background: black;
+    color: white;
 }
 
 .navbar-text.special-margin {
