@@ -32,12 +32,16 @@ Normally a reader is a server-side page that loads the manga's page as an image.
 
     -   The second variable has the same value as `exit_` in JSON.
 
--   To load the manga, redirect to "manga_reader.html" adding two "get" parameters:
+-   To load the manga, redirect to `manga_reader.html` adding two "get" parameters:
 
     -   `manga`: the internal id of the book.
     -   `serverParam`: The internal name id in the server.
 
     Assuming you have a database, the url should look like this: `http://manga.com/read/manga_reader.html?manga=1&serverParam=manga_book`, this calls the url in `coreUrl` and send the information in a GET request, like this: `http://manga.com/core/book?manga_book=1`.
+
+## Customization
+
+You can add custom styles or importing stylesheets using the file `custom.css`.
 
 ## Coming soon
 
@@ -45,6 +49,7 @@ In the future, I want to recreate this project using new technologies (particula
 
 ## Changelog
 
+-   06/05/2019 - Rewrite `buttonSwitch()` in `switches.js`. Added utility module. Some minor fixes.
 -   28/04/2019 - Fix english locale, change `locale.json` url. Fixed styles in `skin.css`.
 -   25/04/2019 - First public version (beta).
 
@@ -52,7 +57,7 @@ In the future, I want to recreate this project using new technologies (particula
 
 -   The project as is still unstable. Consider this a beta version until first release.
 -   Slots for ads unavailable (yet).
--   Support only for two languages: English (default) and Spanish (Español). You can add new locales modifying the file "locale.json" in the "resources" folder.
+-   Support only for two languages: English (default) and Spanish (Español). You can add new locales modifying the file `locale.json` in the "resources" folder.
 -   Untested on Chrome, Edge/IE, Safari.
 -   Demo unavailable (yet).
 
