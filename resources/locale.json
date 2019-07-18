@@ -1,9 +1,15 @@
 {
     "es": {
-        "pages": ["Pagina", "de"],
+        "pages": [
+            "Pagina",
+            "de"
+        ],
         "deadEnd": {
             "retry": "Volver a leer",
             "exit": "Ir al indice"
+        },
+        "pageSelector": {
+            "goTo": "Ir a"
         },
         "about": {
             "title": "Acerca de",
@@ -17,10 +23,16 @@
         }
     },
     "en": {
-        "pages": ["Page", "of"],
+        "pages": [
+            "Page",
+            "of"
+        ],
         "deadEnd": {
             "retry": "Read again",
             "exit": "Go to index"
+        },
+        "pageSelector": {
+            "goTo": "Go to"
         },
         "about": {
             "title": "About",
