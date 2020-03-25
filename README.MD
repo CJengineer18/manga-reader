@@ -45,7 +45,7 @@ You can add custom styles or importing stylesheets using the file `custom.css`.
 
 ## Coming soon
 
-In the future, I want to recreate this project using new technologies (particularly using React) so this project will remain as a legacy version. But, by now, this is the current project.
+In the future, I want to rebuild this project using new technologies (particularly using React) so this project will remain as a legacy version. But, by now, this is the current project.
 
 ## Changelog
 
